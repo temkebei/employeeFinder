@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="header">
+                <h1>Survey</h1>
+
+            </div>
+            <hr>
+            <div>
+                <h4>Your Name (Required)</h4>
+                <div class="input-group">
+                    <input id="formName" class="form-control" type="text" name="name">
+
+                </div>
+                <br>
+                <h4>Link to a Photo Image (Required)</h4>
+                <div class="input-group">
+                    <input id="formImage" class="form-control" type="text" name="name">
+
+                </div>
+            </div>
+            <hr>
+
+            <div>
+                <h3>Please answer the following Questions to find a suitable match !</h3>
+                <p> 1. You like to solve complex problems.</p>
+                <select class="chosen-select" id="q1">
+                    <option value selected disabled> Choose one</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <p> 2. You have a vivid imagination.</p>
+                <select class="chosen-select" id="q2">
+                    <option value selected disabled> Choose one</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div>
+                <p> 3. You enjoy being the center of attention.</p>
+                <select class="chosen-select" id="q3">
+                    <option value selected disabled> Choose one</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div>
+                <p> 4. You get your chores done right away.</p>
+                <select class="chosen-select" id="q4">
+                    <option value selected disabled> Choose one</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div>
+                <p> 5. You believe that others have good intentions.</p>
+                <select class="chosen-select" id="q5">
+                    <option value selected disabled> Choose one</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div>
+                <p> 6. You dislike talking about yourself.</p>
+                <select class="chosen-select" id="q6">
+                    <option value selected disabled> Choose one</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div>
+                <p> 7. You are always prepared and organized.</p>
+                <select class="chosen-select" id="q7">
+                    <option value selected disabled> Choose one</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div>
+                <p> 8. You are passionate about your work.</p>
+                <select class="chosen-select" id="q8">
+                    <option value selected disabled> Choose one</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div>
+                <p> 9. You get stressed very easily.</p>
+                <select class="chosen-select" id="q9">
+                    <option value selected disabled> Choose one</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div>
+                <p> 10. You prefer working by yourself.</p>
+                <select class="chosen-select" id="q5">
+                    <option value selected disabled> Choose one</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id ="submit">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+            </div>
+        </div>
+        <!--- end of jumbotron-->
+    </div>
+    <!--  end of container -->
+
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    
+    <script src="./assets/js/survey.js"></script>
+</body>
+
+</html>
