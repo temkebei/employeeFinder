@@ -1,4 +1,4 @@
-
+const path = require ('path');
 const express = require('express');
 // const router = ecpress.Router();
 const employeesList = require('../data/employees')
@@ -16,5 +16,3 @@ module.exports = function (app) {
         console.log(req.body);
     });
 };
-
-
