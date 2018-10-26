@@ -19,19 +19,11 @@
 
             </div>
             <hr>
-            <div>
-                <h4>Your Name (Required)</h4>
-                <div class="input-group">
-                    <input id="formName" class="form-control" type="text" name="name">
-
-                </div>
-                <br>
-                <h4>Link to a Photo Image (Required)</h4>
-                <div class="input-group">
-                    <input id="formImage" class="form-control" type="text" name="name">
-
-                </div>
-            </div>
+            <br>
+            <label class='active' for="name"> Name (required)</label>
+            <input id="name" type="text" class="validate" required>
+            <label class='active' for="name">Link to Photo (required)</label>
+            <input id="photo" type="text" class="validate" required>
             <hr>
 
             <div>
@@ -154,9 +146,22 @@
                 </select>
             </div>
             <div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block" id ="submit">
+                <!-- submit button -->
+                <button type="submit" class="btn btn-primary btn-lg btn-block" data-toggle = '#match-modal'id ="submit">
                     <i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
             </div>
+            <!-- Modal Dialog Displaying Closest Friend Match -->
+            <div id="modal1" class="modal">
+                    <div class="modal-content">
+                      <h4>Meet Your New employee</h4>
+                      <h5 id="matchName"></h5>
+                      <img id="matchP" src="" alt="No Image" width = 250px>
+                    </div>
+                  <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+                  </div>
+                </div>
+
         </div>
         <!--- end of jumbotron-->
     </div>
