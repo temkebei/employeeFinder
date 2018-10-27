@@ -1,20 +1,9 @@
 // Capture the form inputs
 $("#submit").on("click", function () {
     event.preventDefault();
-    // Form validation
-    function validateForm() {
-        const isValid = true;
-        $(".form-control").each(function () {
-            if ($(this).val() === "") {
-                isValid = false;
-            }
-        });
-        return isValid;
-    }
-    // If all required fields are filled
-    if (validateForm()) {
+    // Form validation 
         // Create an object for the user"s data
-        const userInput = {
+        const userData = {
             name: $("#name").val(),
             photo: $("#photo").val(),
             scores: [
@@ -30,14 +19,18 @@ $("#submit").on("click", function () {
                 $("#q10").val()
             ]
         };
+        console.log(userData)
         // AJAX post the data to the friends API.
-        $.post("/api/employees", userInput, function (data) {
-            // Grab the result from the AJAX post so that the best match's name 
+        $.post("/api/employees", userData, function (data) {
+            console.log(data)
+            // to Grab the result from the AJAX post so that the best match's name 
             // and photo are displayed.
-            $("#matchName").text(data.name);
-            $("#matchPhoto").attr("src", data.photo);
-        });
-    } else {
-        alert("Please fill out all fields before submitting!");
-    }
+            $("#match-name").text(data.name);
+            $("#match-pic").attr("src", data.photo);
+        }); 
+    //  else {
+    //     alert("Please fill out all fields before submitting!");
+    // }
 });
+
+
